@@ -1,0 +1,261 @@
+@font-face {
+	font-family: "Souvenir";
+	src: url(../fonts/souvenir_bold.otf);
+}
+.frame {
+	width: 400px;
+	height: 600px;
+	position: absolute;
+	top: 50%;
+ 	left: 50%;
+    transform: translate(-50%, -50%);
+    border: solid 1px black;
+    animation: night 4s infinite;
+
+}
+.the {
+	font-family: "Souvenir";
+	font-size: 70px;
+	position: absolute;
+	color: purple;
+	left: 260px;
+	text-align: right;
+	margin-top: 0px;
+}
+.color {
+	font-family: "Souvenir";
+	font-size: 95px;
+	position: absolute;
+	color: purple;
+	top: 45px;
+	left: 120px;
+	text-align: right;
+	margin-top: 0px;
+}
+.purple {
+	font-family: "Souvenir";
+	font-size: 95px;
+	position: absolute;
+	color: purple;
+	top: 110px;
+	left: 70px;
+	text-align: right;
+	margin-top: 0px;
+}
+.horizon {
+	position: relative;
+	border-bottom: solid 2px black;
+	top: 380px;
+}
+.by {
+	font-family: "Souvenir";
+	font-size: 90px;
+	position: absolute;
+	color: #9370DB;
+	left: 280px;
+	top: 200px;
+	text-align: right;
+}
+.alice {
+	font-family: "Souvenir";
+	font-size: 90px;
+	position: absolute;
+	color: #9370DB;
+	left: 160px;
+	top: 290px;
+	text-align: right;
+}
+.walker {
+	font-family: "Souvenir";
+	font-size: 80px;
+	position: absolute;
+	color: #9370DB;
+	left: 100px;
+	top: 420px;
+	text-align: right;
+}
+.rectangle {
+	width: 100px;
+	height: 50px;
+	position: absolute;
+	top: 330px;
+	left: 100px;
+	background: gray;
+}
+.triangle {
+	width: 0;
+	height: 0;
+	border-top: 50px solid transparent;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 50px solid gray;
+	position: absolute;
+	left: 100px;
+	top: 230px;
+}
+.window1 {
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	background: black; 
+	top: 340px;
+	left: 115px;
+	animation: lights 4s infinite;
+}
+.window2 {
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	background: black; 
+	top: 340px;
+	left: 145px;
+	animation: lights 4s infinite;
+}
+.window3 {
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	background: black; 
+	top: 340px;
+	left: 173px;
+	animation: lights 4s infinite;
+}
+.door {
+	width: 15px;
+	height: 20px;
+	position: absolute;
+	background: black; 
+	top: 360px;
+	left: 145px;
+}
+.roofline {
+	width: 100px;
+	position: absolute;
+	border-bottom: 1px solid black;
+	top: 330px;
+	left: 100px
+}
+.trunk {
+	width: 15px;
+	height: 20px;
+	position: absolute;
+	top: 360px;
+	left: 40px;
+	background: black;
+}
+.circle {
+	width: 45px;
+	height: 45px;
+	border-radius: 100%;
+	background: green;
+	position: absolute;
+	top: 316px;
+	left: 25px;
+	animation: tree 10s infinite;
+}
+.circle2 {
+	width: 35px;
+	height: 35px;
+	border-radius: 100%;
+	background: green;
+	position: absolute;
+	top: 315px;
+	left: 5px;
+	animation: tree 10s infinite;
+}
+.circle3 {
+	width: 35px;
+	height: 35px;
+	border-radius: 100%;
+	background: green;
+	position: absolute;
+	top: 315px;
+	left: 60px;
+	animation: tree 10s infinite;
+}
+.circle4 {
+	width: 35px;
+	height: 35px;
+	border-radius: 100%;
+	position: absolute;
+	background: green;
+	top: 290px;
+	left: 15px;
+	animation: tree 10s infinite;
+}
+.circle5 {
+	width: 35px;
+	height: 35px;
+	border-radius: 100%;
+	position: absolute;
+	background: green;
+	top: 290px;
+	left: 45px;
+	animation: tree 10s infinite;
+}
+.circle6 {
+	width: 35px;
+	height: 35px;
+	border-radius: 100%;
+	position: absolute;
+	background: green;
+	top: 275px;
+	left: 30px;
+	animation: tree 10s infinite;
+}
+.novel {
+	font-size: 30px;
+	font-family: Souvenir; 
+	position: relative;
+	top: 445px;
+	left: 265px;
+	color: black;	
+	animation: type 5s;
+}
+.byline {
+	width: 100%:;
+	height: 100%;
+	position: absolute;
+	animation: type 5s;
+}
+.house {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	z-index: -1;
+}
+.background {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: #fffdde;
+	z-index: -2;
+	animation: night 10s infinite;
+}
+.house:hover .window1 {
+	position: absolute;
+	background: yellow;
+	transition: 1s;
+}
+.house:hover .window2 {
+	position: absolute;
+	background: yellow;
+	transition: 1s;
+}
+.house:hover .window3 {
+	position: absolute;
+	background: yellow;
+	transition: 1s;
+}
+@keyframes night {
+	from { background-color: #fffdde; }
+	to { background-color: navy; }
+}
+@keyframes type {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+@keyframes tree {
+	from { background-color: green; }
+	to { background-color: black; }
+}
